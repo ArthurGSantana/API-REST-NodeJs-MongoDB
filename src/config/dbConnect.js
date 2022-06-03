@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb+srv://thurzao:280299@thur.2b0qb2s.mongodb.net/thur-node?');
+import dbConnect from './env/development.js';
+
+mongoose.connect(dbConnect);
 
 let db = mongoose.connection;
 
